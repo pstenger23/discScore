@@ -9,6 +9,7 @@ header {
 
 h1 {
     font-size: 64px;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white; 
 }
 
 #score {
@@ -23,6 +24,7 @@ h1 {
     flex-direction: row;
     justify-content: space-between;
     background-color: #686767;
+    border-radius: 5px;
     padding: 30px;
 }
 
