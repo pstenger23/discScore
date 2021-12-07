@@ -1,8 +1,28 @@
-console.log('here');
-currentScoreP1 = 0;
-currentScoreP2 = 0;
-currentScoreP3 = 0;
-currentScoreP4 = 0;
+
+let updateScore1 = localStorage.getItem("p1Score");
+let updateScore2 = localStorage.getItem("p2Score");
+let updateScore3 = localStorage.getItem("p3Score");
+let updateScore4 = localStorage.getItem("p4Score");
+
+
+
+let currentScoreP1 = updateScore1;
+let currentScoreP2 = updateScore2;
+let currentScoreP3 = updateScore3;
+let currentScoreP4 = updateScore4;
+
+if(updateScore1 === null) {
+    currentScoreP1 = 0
+}
+if(updateScore2 === null) {
+    currentScoreP2 = 0
+}
+if(updateScore3 === null) {
+    currentScoreP3 = 0
+}
+if(updateScore4 === null) {
+    currentScoreP4 = 0
+}
 
 const scorePlus1 = document.getElementById('p1plus');
 const scoreMinus1 = document.getElementById('p1minus');
@@ -29,52 +49,68 @@ p4score.textContent = currentScoreP4;
 console.log(p1score);
 
 scorePlus1.onclick = function(event) {
-    currentScoreP1 = currentScoreP1 +1;
-    // console.log(currentScore);
+    currentScoreP1++;
     p1score.textContent = currentScoreP1;
+    saveScores();
+    // console.log(localStorage.getItem("p1Score"));
 };
 
 scoreMinus1.onclick = function(event) {
-    currentScoreP1 = currentScoreP1 -1;
-    // console.log(currentScore);
+    currentScoreP1 = currentScoreP1 - 1;
     p1score.textContent = currentScoreP1;
+    saveScores();
+    console.log(localStorage.getItem("p1Score"));
 };
 
 scorePlus2.onclick = function(event) {
-    currentScoreP2 = currentScoreP2 + 1;
+    currentScoreP2++;
 
     p2score.textContent = currentScoreP2;
+    saveScores();
 }
 
 scoreMinus2.onclick = function(event) {
-    currentScoreP2 = currentScoreP2 - 1;
+    currentScoreP2--;
 
     p2score.textContent = currentScoreP2;
+    saveScores();
 }
 
 scorePlus3.onclick = function(event) {
-    currentScoreP3 = currentScoreP3 + 1;
+    currentScoreP3++;
 
     p3score.textContent = currentScoreP3;
+    saveScores();
 }
 
 scoreMinus3.onclick = function(event) {
-    currentScoreP3 = currentScoreP3 - 1;
+    currentScoreP3--;
 
     p3score.textContent = currentScoreP3;
+    saveScores();
 }
 
 scorePlus4.onclick = function(event) {
-    currentScoreP4 = currentScoreP4 + 1;
+    currentScoreP4++;
 
     p4score.textContent = currentScoreP4;
+    saveScores();
 }
 
 scoreMinus4.onclick = function(event) {
-    currentScoreP4 = currentScoreP4 - 1;
+    currentScoreP4--;
 
     p4score.textContent = currentScoreP4;
+    saveScores();
 }
+
+const saveScores = function() {
+    localStorage.setItem("p1Score", currentScoreP1);
+    localStorage.setItem("p2Score", currentScoreP2);
+    localStorage.setItem("p3Score", currentScoreP3);
+    localStorage.setItem("p4Score", currentScoreP4);
+}
+
 
 
 

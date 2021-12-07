@@ -2,6 +2,7 @@ body {
     background-color: #235723;
     background-image: url('../images/forest-background.jpg');
     background-size: cover;
+    /* background-repeat: no-repeat; */
     margin: 0px;
     padding: 0px;
 }
@@ -26,6 +27,8 @@ h1 {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
+    flex: 1;
+    margin: 0 auto;
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -57,4 +60,8 @@ button {
 }
 .minus {
     background-color: rgb(230, 102, 102);
+}
+
+@media screen and (max-width: 980px) {
+
 }
