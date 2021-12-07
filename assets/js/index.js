@@ -41,6 +41,8 @@ const p2score = document.getElementById('p2score');
 const p3score = document.getElementById('p3score');
 const p4score = document.getElementById('p4score');
 
+const resetButton = document.getElementById('resetButton');
+
 p1score.textContent = currentScoreP1;
 p2score.textContent = currentScoreP2;
 p3score.textContent = currentScoreP3;
@@ -64,42 +66,42 @@ scoreMinus1.onclick = function(event) {
 
 scorePlus2.onclick = function(event) {
     currentScoreP2++;
-
+    
     p2score.textContent = currentScoreP2;
     saveScores();
 }
 
 scoreMinus2.onclick = function(event) {
     currentScoreP2--;
-
+    
     p2score.textContent = currentScoreP2;
     saveScores();
 }
 
 scorePlus3.onclick = function(event) {
     currentScoreP3++;
-
+    
     p3score.textContent = currentScoreP3;
     saveScores();
 }
 
 scoreMinus3.onclick = function(event) {
     currentScoreP3--;
-
+    
     p3score.textContent = currentScoreP3;
     saveScores();
 }
 
 scorePlus4.onclick = function(event) {
     currentScoreP4++;
-
+    
     p4score.textContent = currentScoreP4;
     saveScores();
 }
 
 scoreMinus4.onclick = function(event) {
     currentScoreP4--;
-
+    
     p4score.textContent = currentScoreP4;
     saveScores();
 }
@@ -111,6 +113,16 @@ const saveScores = function() {
     localStorage.setItem("p4Score", currentScoreP4);
 }
 
+resetButton.onclick = function(event) {
+    console.log('clicking');
+    localStorage.setItem("p1Score", 0);
+    localStorage.setItem("p2Score", 0);
+    localStorage.setItem("p3Score", 0);
+    localStorage.setItem("p4Score", 0);
+    
+    window.location.reload();
+    
+}
 
 
 
