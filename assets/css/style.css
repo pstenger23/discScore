@@ -1,15 +1,24 @@
 body {
     background-color: #235723;
+    background-image: url('../images/forest-background.jpg');
+    background-size: cover;
+    margin: 0px;
+    padding: 0px;
 }
 
 header {
-    display: flex;
-    justify-content: center;
+    /* display: flex; */
+    /* justify-content: center; */
+    text-align: center;
+    background-color: #235723;
+    width: 100%;
+    padding: 5px;
 }
 
 h1 {
     font-size: 64px;
-    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white; 
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    margin: 0px; 
 }
 
 #score {
@@ -17,6 +26,8 @@ h1 {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .scoreKeep {
@@ -39,4 +50,11 @@ button {
     font-size: 24px;
     padding-left: 20px;
     padding-right: 20px;
+}
+
+.plus {
+    background-color: rgb(145, 250, 145);
+}
+.minus {
+    background-color: rgb(230, 102, 102);
 }
