@@ -13,11 +13,11 @@ I had created this just for myself, however it's meant for those who want to kee
 When playing disc golf, the scoring of each hole is determined by the set par for that hole. Depending on what you shoot on that hole, you either add or subtract points from your overall score.
 
 For Example:
-Eagle = -2
-Birdie = -1
-Par = 0
-Bogey = +1
-Double-Bogey = +2
+* Eagle = -2
+* Birdie = -1
+* Par = 0
+* Bogey = +1
+* Double-Bogey = +2
 And so on. 
 
 At the end of the round you can then take your overall score and subtract the overall par for the course. So if your tally ends up being 72, witht he overall par being 60 you would end up with an ending score of +12.
