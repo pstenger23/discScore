@@ -18,7 +18,8 @@ header {
 
 h1 {
     font-size: 64px;
-    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
+    color: white;
     margin: 0px; 
 }
 
@@ -42,7 +43,8 @@ h1 {
     padding: 10px 0 10px 0;
     border-radius: 5px;
     font-size: 35px;
-    text-shadow: -0.5px 0 white, 0 0.5px white, 0.5px 0 white, 0 -0.5px white;
+    color: white;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 
 .scoreKeep {
@@ -82,6 +84,7 @@ button {
 footer {
     text-align: center;
     background-color: #235723;
+    color: white;
     width: 100%;
     padding: 5px;
     margin-top: 30px;
