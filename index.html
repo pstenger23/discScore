@@ -13,31 +13,52 @@
     </header>
 
     <section id='score'>
-        <div class='scoreKeep' id='player-1'>
-            <button class='minus' id='p1minus'>-</button>
-            <h3 id='p1score'></h3>
-            <button class='plus' id='p1plus'>+</button>
+        <div class='scoreHolder' id='player-1'>
+            <h3 class='playerName'>Player 1</h3>
+            <div class='scoreKeep'>
+                <button class='minus' id='p1minus'>-</button>
+                <h3 class='scoreDisplay' id='p1score'></h3>
+                <button class='plus' id='p1plus'>+</button>
+            </div>
         </div>
-        <div class='scoreKeep' id='player-2'>
-            <button class='minus' id='p2minus'>-</button>
-            <h3 id='p2score'></h3>
-            <button class='plus' id='p2plus'>+</button>
+        <div class='scoreHolder' id='player-2'>
+            <h3 class='playerName'>Player 2</h3>
+            <div class='scoreKeep'>
+                <button class='minus' id='p2minus'>-</button>
+                <h3 class='scoreDisplay' id='p2score'></h3>
+                <button class='plus' id='p2plus'>+</button>
+            </div>
         </div>
-        <div class='scoreKeep' id='player-3'>
-            <button class='minus' id='p3minus'>-</button>
-            <h3 id='p3score'></h3>
-            <button class='plus' id='p3plus'>+</button>
+        <div class='scoreHolder' id='player-3'>
+            <h3 class='playerName'>Player 3</h3>
+            <div class='scoreKeep'>
+                <button class='minus' id='p3minus'>-</button>
+                <h3 class='scoreDisplay' id='p3score'></h3>
+                <button class='plus' id='p3plus'>+</button>
+            </div>
         </div>
-        <div class='scoreKeep' id='player-4'>
-            <button class='minus' id='p4minus'>-</button>
-            <h3 id='p4score'></h3>
-            <button class='plus' id='p4plus'>+</button>
+        <div class='scoreHolder' id='player-4'>
+            <h3 class='playerName'>Player 4</h3>
+            <div class='scoreKeep'>
+                <button class='minus' id='p4minus'>-</button>
+                <h3 class='scoreDisplay' id='p4score'></h3>
+                <button class='plus' id='p4plus'>+</button>
+            </div>
         </div>
     </section>
 
     <section id='reset'>
-        <button id='resetButton'>Reset Scores</button>
+        <button id='resetButton'>New Round</button>
     </section>
+
+    <footer>
+        <h4 id='footerName'>Created by Peter Stenger</h4>
+
+        <ul>
+            <li><a href='https://github.com/pstenger23/' target='_blank'>GitHub</a></li>
+            <li><a href='https://www.linkedin.com/in/peter-stenger-ab340121a/'>LinkedIn</a></li>
+        </ul>
+    </footer>
     
 <script type='text/javascript' src='./assets/js/index.js'></script>
 </body>
