@@ -42,13 +42,26 @@ const p3score = document.getElementById('p3score');
 const p4score = document.getElementById('p4score');
 
 const resetButton = document.getElementById('resetButton');
+const addScoreBtn = document.getElementById('addScore');
+
+const scoreList = document.getElementById('scoreList');
 
 p1score.textContent = currentScoreP1;
 p2score.textContent = currentScoreP2;
 p3score.textContent = currentScoreP3;
 p4score.textContent = currentScoreP4;
 
-console.log(p1score);
+// console.log(p1score);
+
+addScoreBtn.onclick = function() {
+    // console.log('clicking')
+    const newScore = document.createElement('li');
+    newScore.textContent = currentScoreP1;
+    scoreList.appendChild(newScore);
+    // console.log(newScore);
+    localStorage.setItem('p1Score', 0);
+    p1score.textContent = localStorage.getItem('p1Score');
+}
 
 scorePlus1.onclick = function(event) {
     currentScoreP1++;
@@ -61,7 +74,7 @@ scoreMinus1.onclick = function(event) {
     currentScoreP1 = currentScoreP1 - 1;
     p1score.textContent = currentScoreP1;
     saveScores();
-    console.log(localStorage.getItem("p1Score"));
+    // console.log(localStorage.getItem("p1Score"));
 };
 
 scorePlus2.onclick = function(event) {

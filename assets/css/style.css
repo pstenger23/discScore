@@ -61,13 +61,23 @@ h1 {
     padding-left: 15px;
     padding-right: 15px;
 }
-
-button {
+.scoreCard {
+    background-color: #686767;
+    color: white;
+    border-radius: 5px;;
+    text-align: center;
+}
+#resetButton {
     font-size: 24px;
     padding-left: 20px;
     padding-right: 20px;
 }
-
+.addScoreBtn {
+    margin-left: 60px;
+    margin-top: 15px;
+    background-color: #235723;
+    color: white;
+}
 .plus {
     background-color: rgb(145, 250, 145);
 }
@@ -99,7 +109,7 @@ ul {
     margin-right: 30px;
     display: inline;
 }
-li {
+.footerList {
     display: inline;
     padding: 10px;
 }
