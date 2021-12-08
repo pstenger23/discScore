@@ -20,7 +20,7 @@ For Example:
 * Double-Bogey = +2
 And so on. 
 
-At the end of the round you can then take your overall score and subtract the overall par for the course. So if your tally ends up being 72, witht he overall par being 60 you would end up with an ending score of +12.
+At the end of the round the final score shown is your score for that round.
 
 ## Future Advancements
 
