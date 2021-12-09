@@ -41,6 +41,9 @@ h1 {
     background-color: #235723;
     text-align: center;
     padding: 10px 0 10px 0;
+    border: 5px;
+    border-style: solid;
+    border-color: black;
     border-radius: 5px;
     font-size: 35px;
     color: white;
@@ -51,6 +54,9 @@ h1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    border: 5px;
+    border-style: solid;
+    border-color: black;
     background-color: #686767;
     border-radius: 5px;
     padding: 30px;
@@ -62,6 +68,9 @@ h1 {
     padding-right: 15px;
 }
 .scoreCard {
+    border: 5px;
+    border-style: solid;
+    border-color: black;
     background-color: #686767;
     color: white;
     border-radius: 5px;;
@@ -76,10 +85,21 @@ h1 {
     padding-right: 20px;
 }
 .addScoreBtn {
-    margin-left: 60px;
+    border: 5px;
+    border-style: solid;
+    border-color: black;
+    padding: 15px 60px 15px 80px;
+    font-size: 25px;
+    border-radius: 5px;
+    /* margin-left: 60px; */
     margin-top: 15px;
     background-color: #235723;
     color: white;
+}
+.addScoreHolder {
+    margin-top: 15px;
+    padding-bottom: 20px; 
+    background-color: #235723;
 }
 .plus {
     background-color: rgb(145, 250, 145);
