@@ -66,6 +66,9 @@ h1 {
     color: white;
     border-radius: 5px;;
     text-align: center;
+    margin-top: 10px;
+    padding-top: 0.5px;
+    padding-bottom: 0.5px;
 }
 #resetButton {
     font-size: 24px;
