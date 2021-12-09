@@ -127,55 +127,39 @@ scorePlus2.onclick = function(event) {
     currentScoreP2++;
     
     p2score.textContent = currentScoreP2;
-    // saveScores();
 }
 //P2 SCORE DECREASE
 scoreMinus2.onclick = function(event) {
     currentScoreP2--;
     
     p2score.textContent = currentScoreP2;
-    // saveScores();
 }
 //P3 SCORE INCREASE
 scorePlus3.onclick = function(event) {
     currentScoreP3++;
     
     p3score.textContent = currentScoreP3;
-    // saveScores();
 }
 //P3 SCORE DECREASE
 scoreMinus3.onclick = function(event) {
     currentScoreP3--;
     
     p3score.textContent = currentScoreP3;
-    // saveScores();
 }
 //P4 SCORE INCREASE
 scorePlus4.onclick = function(event) {
     currentScoreP4++;
     
     p4score.textContent = currentScoreP4;
-    // saveScores();
 }
 //P4 SCORE DECREASE
 scoreMinus4.onclick = function(event) {
     currentScoreP4--;
     
     p4score.textContent = currentScoreP4;
-    // saveScores();
 }
 
-//RESET PAGE FUNCTION
-// resetButton.onclick = function(event) {
-//     // console.log('clicking');
-//     // localStorage.setItem("p1Score", 0);
-//     // localStorage.setItem("p2Score", 0);
-//     // localStorage.setItem("p3Score", 0);
-//     // localStorage.setItem("p4Score", 0);
-    
-//     window.location.reload();
-    
-// }
+//SAVE P1 SCORE TO LOCALSTORAGE
 const saveScoreStorage1 = function(newScore1) {
     
     savedScore1.push(newScore1.textContent);
@@ -183,6 +167,7 @@ const saveScoreStorage1 = function(newScore1) {
     localStorage.setItem('p1score', savedScore1);
     
 }
+//SAVE P2 SCORE TO LOCAL STORAGE
 const saveScoreStorage2 = function(newScore2) {
     
     savedScore2.push(newScore2.textContent);
@@ -190,6 +175,7 @@ const saveScoreStorage2 = function(newScore2) {
     localStorage.setItem('p2score', savedScore2);
     
 }
+//SAVE P3 SCORE TO LOCAL STORAGE
 const saveScoreStorage3 = function(newScore3) {
     
     savedScore3.push(newScore3.textContent);
@@ -197,6 +183,7 @@ const saveScoreStorage3 = function(newScore3) {
     localStorage.setItem('p3score', savedScore3);
 
 }
+//SAVE P4 SCORE TO LOCALSTORAGE
 const saveScoreStorage4 = function(newScore4) {
 
     savedScore4.push(newScore4.textContent);
@@ -204,6 +191,7 @@ const saveScoreStorage4 = function(newScore4) {
     localStorage.setItem('p4score', savedScore4);
 
 }
+//LOAD SCORES FROM LOCALSTORAGE
 const loadScores = function() {
 
     if(getScore1 != null) {   
@@ -246,6 +234,15 @@ const loadScores = function() {
     
 
 }
+//RESET PAGE FUNCTION
+resetButton.onclick = function(event) {
+    
+    window.localStorage.clear();
+    
+    window.location.reload();
+    
+}
+
 loadScores()
 
 
