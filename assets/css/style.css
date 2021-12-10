@@ -10,6 +10,10 @@ body {
 header {
     /* display: flex; */
     /* justify-content: center; */
+    border-bottom: 2px;
+    border-top: none;
+    border-style: none none solid none ;
+    border-color: black;
     text-align: center;
     background-color: #235723;
     width: 100%;
@@ -41,7 +45,7 @@ h1 {
     background-color: #235723;
     text-align: center;
     padding: 10px 0 10px 0;
-    border: 5px;
+    border: 3px;
     border-style: solid;
     border-color: black;
     border-radius: 5px;
@@ -54,7 +58,7 @@ h1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border: 5px;
+    border: 3px;
     border-style: solid;
     border-color: black;
     background-color: #686767;
@@ -68,7 +72,7 @@ h1 {
     padding-right: 15px;
 }
 .scoreCard {
-    border: 5px;
+    border: 3px;
     border-style: solid;
     border-color: black;
     background-color: #686767;
@@ -80,12 +84,15 @@ h1 {
     padding-bottom: 0.5px;
 }
 #resetButton {
+    border: 3px;
+    border-color: black;
+    border-style: solid;
     font-size: 24px;
     padding-left: 20px;
     padding-right: 20px;
 }
 .addScoreBtn {
-    border: 5px;
+    border: 3px;
     border-style: solid;
     border-color: black;
     padding: 15px 60px 15px 80px;
@@ -115,6 +122,9 @@ h1 {
 }
 
 footer {
+    border-top: 2px;
+    border-color: black;
+    border-style: solid none none none;
     text-align: center;
     background-color: #235723;
     color: white;
