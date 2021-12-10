@@ -36,4 +36,4 @@ https://pstenger23.github.io/discScore/
 
 ## Site Image
 
-![pstenger23 github io_discScore_](https://user-images.githubusercontent.com/78981011/145491946-cf6743e9-2457-4408-8318-fafd0aad1cf4.png)
+![pstenger23 github io_discScore_ (1)](https://user-images.githubusercontent.com/78981011/145498020-e21d2929-9124-4a5e-a861-ee74e65bc647.png)
