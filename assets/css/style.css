@@ -95,7 +95,8 @@ h1 {
     border: 3px;
     border-style: solid;
     border-color: black;
-    padding: 15px 60px 15px 80px;
+    width: 100%;
+    padding: 15px 0px 15px 0px;
     font-size: 25px;
     border-radius: 5px;
     /* margin-left: 60px; */
@@ -109,9 +110,11 @@ h1 {
     background-color: #235723;
 }
 .plus {
+    padding: 0px 25px 0px 25px;
     background-color: rgb(145, 250, 145);
 }
 .minus {
+    padding: 0px 25px 0px 25px;
     background-color: rgb(230, 102, 102);
 }
 #reset {
